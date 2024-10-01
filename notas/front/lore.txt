@@ -1,0 +1,10 @@
+=============================
+LORE POWERSHELL
+
+Bibliotecas instaladas em ambientes virtuais  são aplicadas somente nelas e não no pc assim evitando conflito entre ambientes.
+
+Instalar qualquer biblioteca sem estar com a biblioteca ligada faz com que seja instalado na maquina inteira.
+
+Só dentro de ambientes virtuais monstra suas bibliotecas com o freeze, caso esteja fora da pasta ele vai mostrar de toda a maquina.
+
+=============================

@@ -1,0 +1,46 @@
+============================
+Command power shell
+mkdir -> cria pasta (mkdir <nome>)
+ren-> renomeia pasta (ren <nome_atual> novo_nome)
+ls -> lista de itens no atual diretório
+cd -> abre pastas(".." volta a pastas, "TAB" autocompleta a escrita)
+code . -> vc abre o visualstudio pelo powershell
+virtualenv <nomeambiente> -> criar virtual
+ou 
+python -m venv<nomeambiente>
+$env:FLASK_DEBUG=1
+set FLASK_DEBUG=1
+Set-ExecutionPolicy Unrestricted -Force -> descloqueia o power shell no winpip
+
+============================
+Command python (PS)
+pip -> chama funções do py
+freeze -> monstra as bibliotecas
+install -> instala uma biblioteca (se o ambiente virtual tiver on, instala só nele)
+--upgrade pip
+{{ }} indica que eh um code python
+url_for ('<nome do metodo>') -> chama o metodo
+
+============================
+Command vitual space
+virtualenv -> ambiente virtual(de espaço e bote um nome e vc cria um ambiente virtual com aquele nome, aparece como se fosse uma pasta)
+flask -> funções do flask
+
+============================
+Comannd python(VSCODE)
+from -> da biblioteca (from flask)
+import -> chamando class (letra maiuscula [from flask import Flask])
+, render_template-> da acesso a função de abrir sites (form flask import Flask, render_template)
+app = Flask(__name__)
+
+@app.route("/") -> Define o url acessado (@ = chamar, nome na frente = o url /<nome>)
+def <nome>( ) -> função para abrir o html (use uma abreviação do site na função pra facilitar)
+return render_template("") -> executa o html na pasta template
+
+============================
+Command HTML+CSS+JS
+<img src="{{ url_for('static', filename='img/img.jpg') }}"  alt="" id="flor" style="width:40%;"> -> serve para puxar a imagem na pasta static
+"{{ url_for('static', filename='css/style.css') }}  -> no campo href, serve para carregar o css que está na pasta static
+<script src="{{ url_for('static', filename='js/script.js') }}"></script> -> serve para carregar o js, que deve estar na pasta static
+
+============================
